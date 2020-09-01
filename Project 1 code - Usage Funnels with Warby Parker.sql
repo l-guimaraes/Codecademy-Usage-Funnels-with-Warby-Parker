@@ -107,7 +107,7 @@ SELECT CASE
     WHEN color LIKE '%Fade%' THEN 'Fade'
     WHEN color LIKE '%Black%' THEN 'Black'
     ELSE 'Gray'
-    END AS 'main_color',
+    END AS 'group_color',
   COUNT(*) AS 'number of purchases'
 FROM purchase
 GROUP BY 1
